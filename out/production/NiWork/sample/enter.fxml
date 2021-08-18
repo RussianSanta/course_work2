@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="390.0" style="-fx-background-color: #ff7a27;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.EnterController">
+   <children>
+      <Pane fx:id="backPane" prefHeight="400.0" prefWidth="390.0" style="-fx-background-color: white;" styleClass="bodybg" stylesheets="@bg.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="127.0" layoutY="51.0" prefHeight="58.0" prefWidth="129.0" text="noDIDI">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <GridPane layoutX="69.0" layoutY="157.0" prefHeight="73.0" prefWidth="245.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="117.0" minWidth="10.0" prefWidth="92.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="158.0" minWidth="10.0" prefWidth="151.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="39.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="35.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Login">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label text="Password" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <PasswordField fx:id="passwordField" style="-fx-border-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font></PasswordField>
+                  <TextField fx:id="loginField" style="-fx-border-color: black;" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font></TextField>
+               </children>
+            </GridPane>
+            <Button fx:id="enterButton" layoutX="154.0" layoutY="303.0" mnemonicParsing="false" onAction="#enterClick" prefHeight="32.0" prefWidth="72.0" style="-fx-background-color: #ff7a27; -fx-border-color: black;" text="Enter">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Hyperlink fx:id="registrationLink" layoutX="154.0" layoutY="353.0" onAction="#registrationClick" text="Registration" textFill="#ff7a27" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Pane>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</AnchorPane>
